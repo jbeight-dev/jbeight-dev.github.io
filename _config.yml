@@ -22,7 +22,7 @@ title                    : "JB Tech. Note"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "JB"
-description              : "I don't fear errors—they help me learn."
+description              : "Cloud, DataPlatform, AI"
 url                      : "https://jbeight-devops.github.io"
 baseurl                  : ""
 repository               : "jbeight-devops/jbeight-devops.github.io"
