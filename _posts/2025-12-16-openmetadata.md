@@ -2,7 +2,7 @@
 layout: single
 title: "Open Metadata 이해하기 - 메타데이터 수집"
 date: 2025-12-14 01:00:00 +0900
-categories: dataplatform, metadata
+categories: Dataplatform Metadata
 share: true
 toc: true
 toc_sticky: true

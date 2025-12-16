@@ -2,7 +2,7 @@
 layout: single
 title: "MCP Server 배포 해주세요."
 date: 2025-09-04 01:00:00 +0900
-categories: MCP, OPS
+categories: MCP 업무일지
 share: true
 ---
 
