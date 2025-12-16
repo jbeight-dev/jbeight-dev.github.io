@@ -11,6 +11,8 @@ toc_sticky: true
 https://docs.open-metadata.org
 읽어보면서 이해한 내용
 
+## OpenMetadata?
+오픈소스 기반의 통합 메타데이터 관리 플랫폼
 
 ## 🌟 OpenMetadata로 무엇을 할 수 있는가
 
