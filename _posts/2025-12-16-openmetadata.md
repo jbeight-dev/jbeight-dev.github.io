@@ -37,37 +37,6 @@ OpenMetaData 서버 + 메타데이터 저장소 + Workflow(Airflow 기반)가 �
 _Airflow는 필수 구성요소는 아니지만 개념 이해를 위해 함께 실행하더라_
 
 
-```mermaid
-flowchart TD
-
-subgraph Source["원본 시스템"]
-    DB["DB / DWH"]
-    QL["Query Log"]
-    DBT["dbt Artifacts"]
-end
-
-subgraph Ingestion["Workflow (Ingestion)"]
-    ING["openmetadata/ingestion"]
-end
-
-subgraph OM["OpenMetadata Server"]
-    META["Metadata 저장"]
-    LIN["Lineage 구성"]
-    OBS["Usage / Observability"]
-    UI["UI 제공"]
-end
-
-DB --> ING
-QL --> ING
-DBT --> ING
-
-ING --> META
-ING --> LIN
-ING --> OBS
-ING --> UI
-
-```
-
 1. openmetadata-dependencies-web-*
    - 역할: OpenMetadata UI + API 서버
   
