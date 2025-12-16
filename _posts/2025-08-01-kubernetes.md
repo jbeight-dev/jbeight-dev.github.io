@@ -2,7 +2,7 @@
 layout: single
 title: "[k8s] ingress/service/deployment 삼각관계"
 date: 2025-08-02 20:21:02 +0900
-categories: kubernetes
+categories: Kubernetes
 share: true
 ---
 

@@ -2,7 +2,7 @@
 layout: single
 title: "Vibecoding 똑똑하게 사용하기 #1"
 date: 2025-08-02 20:21:02 +0900
-categories: vibecoding
+categories: VibeCoding
 share: true
 ---
 
