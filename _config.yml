@@ -127,7 +127,7 @@ analytics:
 author:
   name             : "JB"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I don't fear errors—they help me learn."
+  bio              : ":)"
   location         : "Seoul, Korea"
   email            :
   links:

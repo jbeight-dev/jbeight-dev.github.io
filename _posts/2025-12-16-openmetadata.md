@@ -14,11 +14,11 @@ https://docs.open-metadata.org
 ## OpenMetadata?
 오픈소스 기반의 통합 메타데이터 관리 플랫폼
 
-## 🌟 OpenMetadata로 무엇을 할 수 있는가
+### OpenMetadata로 무엇을 할 수 있는가
 
-- 데이터 검색 (Discovery)
-- 데이터 관측성 (Observability)
-- 데이터 거버넌스
+  - 🌟데이터 검색 (Discovery)
+  - 🌟데이터 관측성 (Observability)
+  - 🌟데이터 거버넌스
 
 ---
 
@@ -32,7 +32,7 @@ https://docs.open-metadata.org
 > https://docs.open-metadata.org/latest/quick-start
 
 Helm으로 실행하는 예제를 살펴보면,
-OpenMetaData 서버 + 메타데이터 저장소 + Workflow(Airflow 기반)가 각각 Pod로 실행된다.
+***OpenMetaData 서버 + 메타데이터 저장소 + Workflow(Airflow 기반)***가 각각 Pod로 실행된다.
 
 _Airflow는 필수 구성요소는 아니지만 개념 이해를 위해 함께 실행하더라_
 
@@ -82,12 +82,12 @@ Workflow를 언제 실행할지 결정
 
 
 
-### Workflow 작업 이해하기
-- 1. openmetadata/ingestion Docker 이미지 기반의 Job/Pod 실행
-- 2. 이미지 내부에 이미 포함된 Connector 코드 로딩
-- 3. 설정된 원본 소스(DB, DWH, BI 등)에 직접 연결
-- 4. 메타데이터 수집 및 표준 포맷으로 변환
-- 5. OpenMetadata Server API로 결과 전송
+## Workflow 작업 이해하기
+  1. openmetadata/ingestion Docker 이미지 기반의 Job/Pod 실행
+  2. 이미지 내부에 이미 포함된 Connector 코드 로딩
+  3. 설정된 원본 소스(DB, DWH, BI 등)에 직접 연결
+  4. 메타데이터 수집 및 표준 포맷으로 변환
+  5. OpenMetadata Server API로 결과 전송
 
 > 커넥터를 따로 설치하거나 배포할 필요 없음.
 

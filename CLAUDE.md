@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Site Overview
 
-This is a Jekyll-based GitHub Pages blog using the Minimal Mistakes theme. The site is configured as "JB Tech. Note" with the tagline "I don't fear errors—they help me learn." It's a personal technical blog focused on DevOps and development topics.
+This is a Jekyll-based GitHub Pages blog 
 
 ## Development Commands
 
@@ -53,7 +53,7 @@ The site uses a main navigation bar with:
 - About (/about/)
 
 ### Theme Features
-- Author profile with bio: "I don't fear errors—they help me learn."
+- Author profile with bio: 
 - Post categorization and tagging system
 - Liquid-based category and tag archives
 - Reading time estimates
