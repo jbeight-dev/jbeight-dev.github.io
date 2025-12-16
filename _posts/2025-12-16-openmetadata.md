@@ -23,8 +23,42 @@ https://docs.open-metadata.org
 ## Quick Start
 > https://docs.open-metadata.org/latest/quick-start
 
+Helm으로 실행하는 예제를 살펴보면,
 OpenMetaData 서버 + 메타데이터 저장소 + Workflow(Airflow 기반)가 각각 Pod로 실행된다.
-(Airflow는 필수 구성요소는 아니지만 개념 이해를 위해 함께 실행하더라)
+
+_Airflow는 필수 구성요소는 아니지만 개념 이해를 위해 함께 실행하더라_
+
+
+```mermaid
+flowchart TD
+
+subgraph Source["원본 시스템"]
+    DB["DB / DWH"]
+    QL["Query Log"]
+    DBT["dbt Artifacts"]
+end
+
+subgraph Ingestion["Workflow (Ingestion)"]
+    ING["openmetadata/ingestion"]
+end
+
+subgraph OM["OpenMetadata Server"]
+    META["Metadata 저장"]
+    LIN["Lineage 구성"]
+    OBS["Usage / Observability"]
+    UI["UI 제공"]
+end
+
+DB --> ING
+QL --> ING
+DBT --> ING
+
+ING --> META
+ING --> LIN
+ING --> OBS
+ING --> UI
+
+```
 
 1. openmetadata-dependencies-web-*
    - 역할: OpenMetadata UI + API 서버
@@ -80,36 +114,7 @@ Workflow를 언제 실행할지 결정
 
 > 커넥터를 따로 설치하거나 배포할 필요 없음.
 
-```mermaid
-flowchart TD
 
-subgraph Source["원본 시스템"]
-    DB["DB / DWH"]
-    QL["Query Log"]
-    DBT["dbt Artifacts"]
-end
-
-subgraph Ingestion["Workflow (Ingestion)"]
-    ING["openmetadata/ingestion"]
-end
-
-subgraph OM["OpenMetadata Server"]
-    META["Metadata 저장"]
-    LIN["Lineage 구성"]
-    OBS["Usage / Observability"]
-    UI["UI 제공"]
-end
-
-DB --> ING
-QL --> ING
-DBT --> ING
-
-ING --> META
-ING --> LIN
-ING --> OBS
-ING --> UI
-
-```
 
 ### Workflow의 주요 유형
 OpenMetadata에서는 목적에 따라 여러 종류의 Workflow를 제공
