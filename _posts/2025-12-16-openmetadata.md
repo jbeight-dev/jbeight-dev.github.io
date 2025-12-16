@@ -22,6 +22,12 @@ https://docs.open-metadata.org
 
 ---
 
+### Architecture
+
+> https://docs.open-metadata.org/latest/developers/architecture
+
+---
+
 ## Quick Start
 > https://docs.open-metadata.org/latest/quick-start
 
